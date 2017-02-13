@@ -1,0 +1,161 @@
+.navigation {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navigation li {
+    float: left;
+    height: 100%;
+    display: inline;
+}
+
+.navigation li a, .navigation li p {
+    display: inline-block;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 14px;
+    font-size: 15px;
+    transition: background-color 0.1s linear;
+}
+
+.navigation .homeButton {
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.navigation .homeButton i {
+    font-size: 22px;
+}
+
+.navigation li.icon {
+    display: none;
+}
+
+.navigation li:not(.active) a:hover, .navigation .dropdown-list:hover, .navigation .dropdown-list:not(.active):hover {
+    background-color: #000;
+    transition: background-color 0.1s linear;
+}
+
+.navigation li.active {
+    background-color: #4CAF50;
+}
+
+.navigation .pull-right .dropdown-list:hover, 
+.navigation .pull-right .dropdown-list a:hover,
+.navigation .dropdown-list.active {
+    background-color: #4CAF50;
+}
+
+.dropdown-list {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    min-width: 160px;
+    width: 100%;
+}
+
+.dropdown-separator {
+    margin: 10px;
+}
+
+.dropdown-content div.active, 
+.navigation .pull-right .dropdown-list .dropdown-content div.active a:hover {
+    background-color: #b3b3ff;
+}
+
+.navigation .dropdown-list .dropdown-content div:not(.active) a:hover {
+    background-color: #e7e7e7;
+}
+
+.navigation .dropdown-list .dropdown-content div.logout a:hover {
+    background-color: #ffbbbb;
+}
+
+.navigation .action {
+    color: #4CAF50;
+    text-align: center;
+    padding: 14px 16px;
+    transition: none;
+}
+
+.navigation li p.action:hover {
+    transition: none;
+}
+
+.navigation .action i {
+    font-size: 12px;
+}
+
+.pull-right .dropdown-content {
+    right: 0;
+}
+
+.dropdown-list:hover .dropdown-content {
+    display: block;
+}
+
+.navigation .dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navigation #signup.active{
+    background-color: #337ab7;
+}
+
+@media screen and (max-width:750px) {
+    .navigation li:not(:first-child), .navigation .pull-right li {
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .navigation li a {
+        width: 100%;
+    }
+
+    .navigation li:not(.active) a:hover, .navigation .dropdown-list:hover, .navigation .dropdown-list:not(.active):hover {
+        background-color: inherit;
+    }
+
+    .navigation li.icon {
+        float: right;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        z-index: 1000;
+    }
+
+    .pull-right {
+        float: none !important;
+        padding: 0;
+    }
+
+    #signin a {
+        color: #4CAF50;
+    }
+
+    #signup a {
+        color: #337ab7;
+    }
+    
+    #signup.active a,  #signin.active a {
+        color: #ffffff;
+    }
+}

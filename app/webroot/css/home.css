@@ -1,0 +1,221 @@
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    margin-top: 55px;
+    font-family: 'Verdana';
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 20px 0px;
+}
+
+h2 i {
+    font-size: 0.70em;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li,
+ul,
+p {
+    margin: 0;
+}
+
+.vmiddle {
+    vertical-align: middle;
+}
+
+.carousel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.carousel,
+.item {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+#background1,
+#background2,
+#background3 {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.carousel-caption {
+    bottom: 20%;
+    margin-bottom: 10%;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+.carousel-control,
+.carousel-control:hover {
+    transition: opacity .5s;
+}
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+@media screen and (max-width:640px) {
+    .carousel-caption {
+        bottom: 25%;
+        height: 30%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8em;
+    }
+
+    .carousel-caption h4 {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    #background1 {
+        background-image: url('../img/carousel/JPEG/paraglider-640.jpg');
+    }
+
+    #background2 {
+        background-image: url('../img/carousel/JPEG/workout-640.jpg');
+    }
+
+    #background3 {
+        background-image: url('../img/carousel/JPEG/tennis-640.jpg');
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    #background1 {
+        background-image: url('../img/carousel/JPEG/paraglider-800.jpg');
+    }
+
+    #background2 {
+        background-image: url('../img/carousel/JPEG/workout-800.jpg');
+    }
+
+    #background3 {
+        background-image: url('../img/carousel/JPEG/tennis-800.jpg');
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    #background1 {
+        background-image: url('../img/carousel/JPEG/paraglider-1024.jpg');
+    }
+
+    #background2 {
+        background-image: url('../img/carousel/JPEG/workout-1024.jpg');
+    }
+
+    #background3 {
+        background-image: url('../img/carousel/JPEG/tennis-1024.jpg');
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+    #background1 {
+        background-image: url('../img/carousel/JPEG/paraglider-1280.jpg');
+    }
+
+    #background2 {
+        background-image: url('../img/carousel/JPEG/workout-1280.jpg');
+    }
+
+    #background3 {
+        background-image: url('../img/carousel/JPEG/tennis-1280.jpg');
+    }
+
+}
+
+@media screen and (max-width:1600px) {
+    #background1 {
+        background-image: url('../img/carousel/JPEG/paraglider-1600.jpg');
+    }
+
+    #background2 {
+        background-image: url('../img/carousel/JPEG/workout-1600.jpg');
+    }
+
+    #background3 {
+        background-image: url('../img/carousel/JPEG/tennis-1600.jpg');
+    }
+
+}
+
+@media screen and (min-width:1601px) {
+    #background1 {
+        background-image: url('../img/carousel/JPEG/paraglider-2048.jpg');
+    }
+
+    #background2 {
+        background-image: url('../img/carousel/JPEG/workout-2048.jpg');
+    }
+
+    #background3 {
+        background-image: url('../img/carousel/JPEG/tennis-2048.jpg');
+    }
+
+}
