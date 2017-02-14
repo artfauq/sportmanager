@@ -1,6 +1,5 @@
 <?php $this->assign('title', 'Sign Up'); ?>
 
-
 <div class="row smallbox">
     <h1>Sign Up</h1>
     <?php

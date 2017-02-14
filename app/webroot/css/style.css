@@ -344,10 +344,6 @@ footer {
 
 @media screen and (max-width: 640px) {
 
-/*  .smallbox, .bigbox {
-    padding: 2% 8% 8% 8%;
-    margin: 2% 0 4% 0;
-  }*/
     .smallbox, .bigbox {
         padding: 2% 5% 5%;
         margin: 5% 0;
