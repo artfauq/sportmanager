@@ -8,8 +8,8 @@ var bases = {
   app: 'app/',
   dist: 'dist/',
   lib: 'lib/',
-  ignore: ['!**/*.htaccess', '!**/database.php']
-}; 
+  copy: ['**', '!*.htaccess', '!app/*.htaccess', '!app/webroot/*.htaccess', '!app/Config/database.php', '!index.php']
+};
 
 var paths = {
   webroot: 'app/webroot/',
@@ -23,16 +23,16 @@ var paths = {
 };
 
 gulp.task('clean', function() {
-  return gulp.src(['*', bases.ignore], { cwd: bases.dist })
+  return gulp.src(bases.copy, { cwd: bases.dist, read: false })
     .pipe(clean());
 });
 
 gulp.task('copy', ['clean'], function() {
 
-  gulp.src(['index.php', '.htaccess'])
+  gulp.src(['index.php'])
     .pipe(gulp.dest(bases.dist));
 
-  gulp.src([bases.app + '**/*', bases.ignore])
+  gulp.src([bases.app + '**/*', bases.ignore.toString()])
     .pipe(gulp.dest(bases.dist + 'app/'));
 
   gulp.src(bases.lib + '**/*')
